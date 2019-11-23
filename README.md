@@ -19,3 +19,23 @@ ENV pandoc 2.8
 ```bash
 docker pull opsnowtools/valve-pandoc-builder
 ```
+
+## Jenkinsfile
+젠킨스 파일에서 다음과 같이 설정해서 사용할 수 있습니다.
+```
+...
+
+podTemplate(label: label, containers: [
+  containerTemplate(name: "pandoc-builder", image: "opsnowtools/valve-pandoc-builder:v0.1.1", command: "cat", ttyEnabled: true, alwaysPullImage: true)
+], volumes: [
+  hostPathVolume(mountPath: "/var/run/docker.sock", hostPath: "/var/run/docker.sock")
+]) {
+    ...
+    stage("Precompile") {
+      container("pandoc-builder") {
+        ...
+      }
+    }
+    ...
+}
+```
