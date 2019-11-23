@@ -21,7 +21,7 @@ docker pull opsnowtools/valve-pandoc-builder
 ```
 
 ## Jenkinsfile
-젠킨스 파일에서 다음과 같이 사용할 수 있습니다.
+마크다운 문서를 html 문서로 변환하기 위해서 젠킨스파일을 다음과 같이 설정할 수 있습니다.
 ```
 ...
 
