@@ -21,7 +21,7 @@ docker pull opsnowtools/valve-pandoc-builder
 ```
 
 ## Jenkinsfile
-젠킨스 파일에서 다음과 같이 설정해서 사용할 수 있습니다.
+젠킨스 파일에서 다음과 같이 사용할 수 있습니다.
 ```
 ...
 
