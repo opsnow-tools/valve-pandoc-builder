@@ -2,7 +2,7 @@
 
 FROM node:10-jessie-slim
 
-ENV pandoc 2.8
+ENV pandoc 2.9.1.1
 
 RUN apt-get update
 RUN apt-get install -y bzip2 curl
