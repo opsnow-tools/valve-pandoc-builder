@@ -11,7 +11,7 @@ node를 베이스 이미지로 사용하여 pandoc을 설치해 최종 이미지
 
 ## tools
 ```
-ENV pandoc 2.9.1.1
+ENV pandoc 2.9.2
 ```
 
 ## docket image
